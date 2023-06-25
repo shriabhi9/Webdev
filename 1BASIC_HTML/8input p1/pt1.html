@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- from tag -->
+    <form action="">
+        <label for="fname">First name</label>
+        <input type="text" name="frame">
+        <br><br>
+        
+        <label for="lname">Last name</label>
+        <input type="text" name="frame">
+        <br><br>
+        
+        <!-- label tag is use to maek labels   -->
+        <label for="userpassword">password</label>
+
+        <!-- input tag use to take input the input can be anything -->
+        <input type="password" name="userpassword">
+        <br><br>
+        <input type="submit" name="signup">
+        <input type="reset" name="reset data">
+        <br><br>
+                
+        <!-- radio button -->
+        <p>What is your gender ?</p>
+        <input type="radio" name="gender" value="male">
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="female">
+        <label for="gender">Female</label>
+        
+        <!-- check boxes  -->
+        <p>What is your hobby ?</p>
+        <input type="checkbox" name="Hobbies" value="reading">
+        <label >Reading</label>
+        <input type="checkbox" name="Hobbies" value="Writting">
+        <label >Writting</label>
+        
+        <input type="button" value="click me" onclick="alert('some task is done')">
+        <br><br>
+        <input type="color" name="bgcolor" value="ffffff">
+
+        <input type="date" name="dob" max="2024-11-10">
+        <!-- we can also pass min values -->
+
+        <input type="file" name="choosefile"
+        accept="image/*, .pdf">
+        
+        <input type="month" name="months">
+
+        <input type="time" name="Time">
+
+        <input type="week" name="week">
+
+        <input type="number" value="10" min="4" max="20" step="2">
+        
+        <label >Select your age</label>
+        <input type="range" name="age" min="0" max="100">
+
+    </form>
+</body>
+</html>

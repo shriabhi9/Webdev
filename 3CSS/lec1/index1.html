@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- external css is separate file we have to link that file with our html file -->
+    <link rel="stylesheet" href="./style1.css" />
+</head>
+
+<!-- internal css -->
+<!-- <style>
+    /* gloabal styling *{<styling>} means that u r selecting
+       the whole page  */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* h1 {
+        color: red;
+    }
+    p{
+        color: blue;
+    } */
+
+    /* To select a class we use .<class_name>{<styling>} */
+    .myHead1{
+        color: red;
+    }
+
+    /* To select id we use #<id_name>{<styling>} */
+    #MyThirdElement{
+        color: green;
+    }
+    
+    /* if u are styling two tag then u can 
+       do something like this */
+    .myHead1,.myPtag{
+        background-color: aqua;
+        margin: 10px;
+    }
+
+</style> -->
+
+<body>
+    
+    <!-- inline css -->
+    <!-- <h1 style="background-color: antiquewhite; margin: 0; color: aqua;">This is inline css h1 tag</h1> -->
+
+    <!-- we can use one class at so many places -->
+    <h1 class="myHead1">This is my heading</h1>
+    <h1 class="myHead1">This is my heading</h1>
+
+    <!-- but we cant use same id at many places id is unique for each tag -->
+    <h1 id="MyThirdElement">This is my heading</h1>
+
+    <p class="myPtag">this is my paragraph</p>
+
+</body>
+
+</html>
+

@@ -1,0 +1,29 @@
+/* gloabal styling *{<styling>} means that u r selecting
+   the whole page  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* h1 {
+    color: red;
+}
+p{
+    color: blue;
+} */
+
+/* To select a class we use .<class_name>{<styling>} */
+.myHead1{
+    color: red;
+}
+
+/* To select id we use #<id_name>{<styling>} */
+#MyThirdElement{
+    color: green;
+}
+
+/* if u are styling two tag then u can 
+   do something like this */
+.myHead1,.myPtag{
+    background-color: aqua;
+    margin: 10px;
+}

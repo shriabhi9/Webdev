@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+    canvas{
+        border-radius: 5px;
+        background-color: #ffffff;
+    }
+</style>
+<body>
+    <canvas id="canvas" width="500" height="800"></canvas>
+</body>
+
+<script>
+    const canvas = document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+    canvas.width = window.innerWidth-100
+
+    //smiley face
+    ctx.beginPath()
+    ctx.arc(300,300,200,0,Math.PI*2);
+    ctx.fillStyle = "yellow";
+    ctx.fill()
+    ctx.strokeStyle = "black";
+    ctx.stroke()
+
+    // eye
+    ctx.beginPath()
+    ctx.arc(400,250,30,0,Math.PI*2)
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    ctx.beginPath()
+    ctx.arc(200,250,30,0,Math.PI*2)
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    // mouth
+    ctx.beginPath()
+    ctx.arc(300,350,100,0,Math.PI)
+    ctx.fillStyle = "black";
+    ctx.fill();
+    
+    // teeth
+    ctx.beginPath()
+    ctx.moveTo(240,350);
+    ctx.lineTo(270,350)
+    ctx.lineTo(270,370)
+    ctx.lineTo(240, 370)
+    ctx.moveTo(240,350);
+    ctx.fillStyle = 'white';
+    ctx.fill();
+    ctx.stroke();
+</script>
+</html>

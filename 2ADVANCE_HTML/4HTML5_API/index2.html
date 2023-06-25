@@ -1,0 +1,28 @@
+<!-- File API : Used to access data about files on the system. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <input type="file" id="fileinput" onchange="displayfileData()"/>
+   <div id="output"></div> 
+</body>
+
+<script>
+    function displayfileData(){
+        var fileInput = document.getElementById("fileinput");
+        // console.log(fileInput.files)
+
+        var filedata = fileInput.files[0]
+        var output = document.getElementById("output")
+         
+        output.innerHTML = 
+        "file name: " + filedata.name +"<br>"+
+        "file type: " + filedata.type +"<br>"+
+        "file size: " + filedata.size              
+    }
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!-- Drag and Drop API : Used to drag and drop files hassle free. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #container{
+        width: 350px;
+        height: 350px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+       <div id="container"
+       ondragover="allowdrop(event)"
+       ondrop="drop(event)"
+       ></div>
+       <br>
+       <img id="myimage" src="./img.jpg" alt="image" draggable="true" width="250" height="250"
+       ondragstart="drag(event)"
+       >
+
+</body>
+
+<script>
+    function allowdrop(e){
+        e.preventDefault();
+    }
+    function drag(e){
+        // alert(e.target.id)
+        e.dataTransfer.setData("myimagetotransfer",e.target.id)
+
+    }
+    function drop(e){
+        e.preventDefault();
+        var data = e.dataTransfer.getData("myimagetotransfer")
+        e.targer.appendChild(document.getElementById(data))
+    }
+</script>
+
+</html>

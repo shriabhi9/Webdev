@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    canvas{
+        border-radius: 5px;
+        background-color: #ffffff;
+        width: "80%"; 
+        height:"80%";
+    }
+</style>
+<body>
+    <canvas id="canvas" width="500" height="500" ></canvas>
+</body>
+<!-- script -->
+<script>
+    const canvas = document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+
+    // fill rectangle--->
+    // ctx.fillStyle = "pink";
+    // ctx.fillRect(20,20,80,30)
+    // ctx.fillStyle = "blue";
+    // ctx.fillRect(120,20,80,30)
+
+    // stroke rectangle--->
+    // ctx.lineWidth = 1;
+    // ctx.strokeStyle = "green";
+    // ctx.strokeRect(10,20,80,30)
+    
+    // ctx.lineWidth = 1;
+    // ctx.strokeStyle = "blue";
+    // ctx.strokeRect(110,20,80,30)
+
+    // ctx.lineWidth = 1;
+    // ctx.strokeStyle = "blue";
+    // ctx.strokeRect(210,20,80,30)
+
+    //clear rect----->
+    // ctx.fillStyle = "pink";
+    // ctx.fillRect(20,20,80,30)
+
+    // ctx.clearRect(25,25,70,20)
+
+    // fill text
+    // canvas.width = window.innerWidth;
+    
+    // ctx.font = '30px Arial';
+    // ctx.fillStyle = "purple";
+    // ctx.fillText("Hello world!",400,50)
+    
+    // stroke text----------->
+    // ctx.strokeStyle = "red";
+    // ctx.strokeText("Hello world", 700,50)
+    
+
+    // line ------->
+    // ctx.beginPath();
+    // ctx.moveTo(200,150);
+    // ctx.lineTo(400,150);
+    // ctx.lineTo(400,250);
+    // ctx.lineTo(200,250);
+    // ctx.lineTo(200,150);
+
+
+    // ctx.lineWidth = 5;
+    // ctx.strokeStyle = "red";
+    // ctx.stroke()
+    // ctx.fillStyle = "blue";
+    // ctx.fill()
+    
+    // circle
+    // ctx.beginPath();
+    // ctx.arc(200,150,70,0,Math.PI*2)
+    // ctx.strokeStyle = "red";
+    // ctx.stroke()
+    // to fill the circle
+    // ctx.fillStyle = "blue";
+    // ctx.fill()
+
+
+     
+</script>
+</html>

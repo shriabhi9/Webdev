@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Templates are used to perform various task again and again -->
+    <template id="myTemplate">
+        <h2>Hello world</h2>
+        <p>this is a paragraph</p> 
+    </template>
+</body>
+<script>
+    const data = {
+        // here title and description working as a key 
+        // and the content of these variables is key  
+        title : "This is a title",
+        description : "This is a description"
+    }
+
+    const template = document.getElementById("myTemplate")
+    const content = template.content.cloneNode(true);
+    
+    // basically this JS querySelector will replace the h2 with the title
+    content.querySelector("h2").innerHTML = data.title;
+    
+    // And this JS querySelector will replace the p tag innerHTML content with the description
+    content.querySelector("p").innerHTML = data.description;
+    
+    // after this you will see that you web page data is changed
+    document.body.appendChild(content)
+</script>
+</html>

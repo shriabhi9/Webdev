@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th{
+        background-color: aqua;
+        font-size: 20px;
+        border: 1px solid black;
+    }
+    td{
+        background-color: rgb(255, 249, 249);
+        font-size: 10px;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid gray;
+    }
+    thead{
+        color: rgb(248, 77, 77);
+    }
+</style>
+<body>
+    <table>
+        <caption>My table</caption>
+        <tr>
+            <th>Age</th>
+            <th>First name</th>
+            <th>last name</th>
+        </tr>
+        <tr>
+            <td rowspan="2">25</td>
+            <td colspan="2">Harshal</td>
+            
+        </tr>
+        <tr>
+            
+            <td>Abhishek</td>
+            <td>shrivastava</td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    this is tfoot
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

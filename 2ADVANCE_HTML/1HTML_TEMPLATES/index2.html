@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Templates are used to perform various task again and again -->
+    <template id="parentTemplate">
+        <h1>Parent template</h1>
+
+        <template id="childTemplate">
+            <h2>child template</h2>
+        </template>
+    </template>
+</body>
+<script>
+    const parentTemplate = document.getElementById("parentTemplate");
+    const parentContent = parentTemplate.content.cloneNode(true);
+    
+    const childTemplate = parentContent.querySelector("#childTemplate");
+    const childContent = childTemplate.content.cloneNode(true);
+
+    parentContent.appendChild(childContent)
+    document.body.appendChild(parentContent)
+
+</script>
+</html>

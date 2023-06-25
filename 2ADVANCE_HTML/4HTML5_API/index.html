@@ -1,0 +1,39 @@
+<!-- Geolocation API : Used for finding the user's geolocation. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="getUserLocation()">
+        Get my location</button>
+
+    <div id="location"></div>
+</body>
+<script>
+    function getUserLocation() {
+        // alert("Hello world")
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError)
+        }
+        else {
+            document.getElementById("location").innerHTML = "Geolocation is not support by this"
+        }
+    }
+    function showPosition(position) {
+        // console.log(position)
+        document.getElementById("location").innerHTML = "Latitude:" + position.coords.latitude + "<br>" + "longitude: " +position.coords.longitude
+    }
+    function showError(error) {
+        // console.log(error)
+        document.getElementById("location").innerHTML = "Error: " + error.message
+    }
+
+</script>
+
+</html>
