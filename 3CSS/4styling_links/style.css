@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: black;
+    align-items: center;
+
+}
+
+nav ul {
+    display: flex;
+    color: white;
+    gap: 10px;
+
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 14px;
+
+}
+
+.style-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.8s ease-in-out;
+}
+.style-link:link {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.style-link:visited {
+    color: grey;
+}
+.style-link:hover {
+    background-color:greenyellow ;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 20px;
+}
