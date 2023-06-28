@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   
+}  
+
+nav ul{
+    display: flex;
+    color: aliceblue;
+    gap: 10px;
+    
+}
+nav ul li{
+    list-style: none;
+    color: aqua;
+    
+}
+.style-link{
+    color: gray;
+    text-decoration: none;
+}
