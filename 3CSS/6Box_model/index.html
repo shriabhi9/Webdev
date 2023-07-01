@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* .box{
+        width: 200px;
+        height: 100px;
+        background-color: aquamarine;
+        padding: 15px 5px;
+        border: solid red;
+        margin: 30px;
+    } */
+    .inline-box{
+        background-color: aqua;
+    }
+    .block-box{
+        background-color: blueviolet;
+    }
+    /* inline box always ignores the margin it does not take it */
+    .inline-box, .block-box{
+        width: 200px;
+        height: 200px;
+        border: solid black;
+        margin: 50px;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <!-- <div class="box">
+        <p>some text</p>
+    </div> -->
+
+    <span class="inline-box"> Inline Element</span>
+    <div class="block-box">Block Element</div>
+
+</body>
+</html>
