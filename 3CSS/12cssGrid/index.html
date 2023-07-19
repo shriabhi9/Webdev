@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+       margin: 0;
+       padding: 0;
+    }
+    .container{
+        /* background-color: rgb(150, 255, 150); */
+        display: grid;
+        grid-gap: 10px;
+        width: 800px;
+        height: 400px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px;
+        grid-template-rows: 1fr 2fr 1fr;
+        border: 2px solid black;
+    }
+
+    .item{
+        background-color: #444;
+        color: white;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .item:nth-child(1){
+        grid-column: 1 / 4;
+        background-color: aqua;
+    }
+    .item:nth-child(2){
+        grid-column: 1 / 2;
+        background-color: pink;
+    }
+    .item:nth-child(3){
+        grid-column: 2 / 4;
+        background-color: blue;
+    }
+    div:nth-child(4){
+        grid-column: 1 / 4;
+        background-color: brown;
+    }
+</style>
+
+<body>
+    <div class="container">
+        
+        <div class="item">1 Navbar</div>
+        <div class="item">2 Sidebar</div>
+        <div class="item">3 Content</div>
+        <div class="item">4 Footer</div>
+    
+    </div>
+</body>
+</html>

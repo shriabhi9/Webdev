@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        background-color: aquamarine;
+        max-width: 800px;
+        min-height: 400px;
+        
+    }
+
+    .container p{
+        background-color: blueviolet;
+        color: white;
+        font-size: 25px;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .flexcont{
+        display: flex;
+        
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row; -- by default*/
+
+        /* justify-content: center; */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-around;
+        justify-content: space-between;
+        justify-content: space-evenly; */
+
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: stretch; */
+        /* align-items: baseline; */
+        
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+
+    }
+    p{
+        width: 350px;
+        /* align-self: center; */
+        /* align-self: stretch; */
+        /* align-self: flex-start; */
+        /* align-self: flex-end; */
+        /* align-self: baseline; */
+        
+    }
+    p:nth-child(2){
+        height: 100px;
+    }
+</style>
+
+<body>
+    <div class="container flexcont">
+        <p>Hey</p>
+        <p>There</p>
+        <p>How</p>
+        <p>Are</p>
+        <p>You</p>
+    </div>
+</body>
+</html>
