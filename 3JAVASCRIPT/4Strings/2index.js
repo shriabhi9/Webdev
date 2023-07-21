@@ -13,3 +13,4 @@ console.log(text.charCodeAt(5)) // returns the unicode means ascii value of that
 for(let i = 0; i < text.length; i++){
     console.log(`the ascii value of ${text[i]} is ${text.charCodeAt(i)}`)
 }
+console.log("HEllo")
