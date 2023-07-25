@@ -11,5 +11,6 @@ const obj = {
         console.log("Bye have a great day")
     }
 }
+console.log(obj.greetMessage) // output : [Funtion : greetMessage]
 obj.greetMessage()
 obj.bye()
