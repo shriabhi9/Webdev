@@ -20,4 +20,5 @@ console.log(obj.Age)
 
 // two way to acces
 console.log(obj.course)
+
 console.log(obj["course"])
