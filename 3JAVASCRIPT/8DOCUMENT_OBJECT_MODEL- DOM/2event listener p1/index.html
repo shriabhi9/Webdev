@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #27272a;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-heading{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        color: green;
+    }
+    .button{
+        font-size: 2rem;
+        padding: 8px 2rem;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+    .button:hover{
+        cursor: pointer;
+        opacity: .8;
+    }
+
+    .btn-red{
+        background-color: red;
+        color: #fff;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="main-heading">
+            <h1 class="title">GeeksforGeeks</h1>
+        </div>
+        <div class="buttons">
+            <button id="btn-start" class="button start">Start</button>
+            <button id="btn-stop" class="button stop">Stop</button>
+            <button id="btn-count" class="button count">count</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
